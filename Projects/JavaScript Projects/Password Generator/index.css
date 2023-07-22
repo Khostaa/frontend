@@ -1,0 +1,102 @@
+body {
+    background: #1F2937;
+    margin: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+@font-face {
+    font-family: karla;
+    src: url("./fonts/Karla-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: inter;
+    src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+#top{
+    color: var(--white, #FFF);
+    font-family: karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+}
+#below-top{
+    margin: 0px;
+    color: #4ADF86;
+    font-family: karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+#para{
+    margin: 10px 0px 50px 0px;
+    color: var(--medium-grey, #D5D4D8);
+    /* text-xl/leading-7/font-normal */
+    font-family: inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+#gpass{
+    margin: 0px 0px 35px 0px;
+
+    display: inline-flex;
+    padding: 9px 17px 9px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 6px;
+    background: #10B981;
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+    /*text property*/
+    color: var(--white, #FFF);
+    /* text-base/leading-6/font-medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.line{
+    width: auto;
+    height: 1px;
+    background: #2F3E53;           
+}
+
+.Containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pass{
+    margin: 35px 25px 0px 0px;
+    width: 211px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #273549;
+    color: #55F991;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        text-align: left;
+        margin-left: 5px;
+    }
+    .Containers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+  }
