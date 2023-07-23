@@ -5,6 +5,36 @@ body {
     height: auto;
     text-align: center;
 }
+#toggle{
+    background: none;
+    border: none;
+    padding-top: 10px;
+
+}
+.dark-mode {
+    background: #ECFDF5;
+    #top{
+        color: #1C1C1C;
+    }
+    #below-top{
+        color: #10B981;
+    }
+    #para{
+        color: #6B7280;
+    }
+    #checkbox{
+        color:#1F2937;
+    }
+    #toggle path{
+        
+        fill: #1F2937;
+    }
+    #line{
+        background:#D5D4D8;
+    }
+
+}
+
 @font-face {
     font-family: karla;
     src: url("./fonts/Karla-VariableFont_wght.ttf");
@@ -12,6 +42,28 @@ body {
 @font-face {
     font-family: inter;
     src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.align-center{
+    align-items: center;
+}
+.justify-end{
+    justify-content: end;
+}
+.align-end{
+    align-items: end;
 }
 #top{
     color: var(--white, #FFF);
@@ -53,10 +105,8 @@ body {
     align-items: center;
     gap: 12px;
     border-radius: 6px;
+    border: none;
     background: #10B981;
-    /* shadow/sm */
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-
     /*text property*/
     color: var(--white, #FFF);
     /* text-base/leading-6/font-medium */
@@ -67,30 +117,52 @@ body {
     line-height: 24px; /* 150% */
 }
 
-.line{
-    width: auto;
-    height: 1px;
-    background: #2F3E53;           
+#checkbox{
+    color: whitesmoke;
+    margin-bottom: 25px;
+    font: bold;
+    font-family: inter;
 }
 
-.Containers{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#line{
+    width: 450px;
+    margin: 0px auto;
+    height: 1px;
+    background: #2F3E53; 
+
 }
-.pass{
+
+.Container1{
     margin: 35px 25px 0px 0px;
+
+}
+.Container2{
+    margin: 35px 25px 0px 0px;
+
+}
+
+.pass{
+    /* margin: 35px 25px 0px 0px; */
+    
     width: 211px;
-    height: 39px;
+    height: 50px;
     flex-shrink: 0;
     border-radius: 6px;
     background: #273549;
+    
+    /*text properties*/
     color: #55F991;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
 }
 @media only screen and (max-width: 600px) {
     body{
-        text-align: left;
-        margin-left: 5px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .top{
+        text-align: start;
     }
     .Containers {
         display: flex;
