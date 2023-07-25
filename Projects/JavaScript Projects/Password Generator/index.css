@@ -32,6 +32,9 @@ body {
     #line{
         background:#D5D4D8;
     }
+    #copy-button g{
+        stroke:#1F2937;
+    }
 
 }
 
@@ -137,7 +140,7 @@ body {
 
 }
 .Container2{
-    margin: 35px 25px 0px 0px;
+    margin: 35px 25px 0px 5px;
 
 }
 
@@ -156,6 +159,23 @@ body {
     text-align: center;
     align-items: center;
 }
+#copy-button{
+ display: flex;
+ background: none;
+ position: relative;
+ border: none;
+ margin-bottom: 4px;
+}
+#copy-button g{
+    stroke: #ECFDF5;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
     body{
         text-align: center;
